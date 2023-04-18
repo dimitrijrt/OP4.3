@@ -1,0 +1,303 @@
+
+body {
+  max-width: 750px;
+  margin: 0;
+  font-family:'Roboto' ;
+}
+
+
+
+.img2 {
+  height: 275px;
+}
+
+.fa-heart {
+  font-size: 22px;
+  padding: 40px 40px 0 40px;
+}
+
+
+.head i {
+  cursor: pointer;
+  position: absolute;
+  left: 23px;
+  top:3.1%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
+}
+
+h2 {
+  margin-bottom: 0;
+
+}
+
+.head img {
+  width: 162px;
+}
+
+.img-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  
+}
+
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.effet {
+  background-color: #99E2D0;
+  display: none;
+  transition: 100s;
+  height:400%
+  
+}
+
+
+.fa-check {
+  padding:5px;
+  color: #99E2D0;
+  background-color:white;
+  border-radius: 15px;
+  display: flex;
+  align-items: top;
+  
+  transition: 0.9s;
+  
+}
+
+.prize:active + .effet {
+  display: flex;
+  background-color: #99E2D0;
+  height: 300%;
+  align-items: center;
+  
+  
+}
+
+i {
+  cursor: pointer;
+}
+.fa-full {
+  position: absolute;
+  transition: transform 450ms, background-color 300ms 150ms;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  font-size: 22px;
+  opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-full:active {
+  opacity: 1;
+}
+
+
+
+.prize:hover + .fa-v {
+  display: block;
+  color: red;
+}
+  
+.prize::before  {
+  display: block;
+  background-color: #99E2D0;
+}
+  
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.horizontal {
+  border: 1px solid #99E2D0;
+  width: 7%;
+  margin-left: 2px;
+}
+
+.card {
+    background-color: white;
+   
+    border-radius: 15px;
+    padding: 12px 10px 0 10px;
+    min-width: 349px;
+    justify-content: center;
+    height:68px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+
+.card h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+   
+    background-color:#EAEAEA ;
+    padding: 13px;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    padding-bottom: 66px;
+    padding-left: 13px;
+    position: relative;
+    margin-top: -20px;
+    
+}
+
+.img2 img {
+    width: 100%;
+    height:275px;
+    object-fit: cover;
+}
+
+.prize {
+  justify-content: end;
+}
+
+
+
+
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 22px;
+  
+  
+}
+
+footer a {
+  padding-left: 25px;
+  padding-top: 7px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.lienicon {
+  flex-direction: row;
+}
+
+footer img {
+  width: 137px;
+  height: 27px;
+  padding: 25px;
+  -webkit-filter: invert(100%);
+}
+
+footer i {
+  margin-right: 11px;
+}
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .firstbutton {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 13px 20px;
+    margin: 0 2%;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    color: white;
+    margin: 40px 0 40px 0;
+    cursor: pointer;
+  }
+
+  
+  
+  .unbouton {
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  
+
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  body {
+    font-family: 'Roboto';
+  }
+
+
+
+ 
+  
+
+
+
+  @media screen and (min-width: 1440px) {
+
+    
+
+    body {
+        max-width: 1440px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding-top: 64px;
+        justify-content:end;
+        padding-right: 20px;
+    }
+
+    footer img {
+      padding-left: 30px;
+      padding-top: 0;
+      
+    }
+
+    .menu {
+      margin-left: 210px;
+      margin-right: 210px;
+    }
+
+    .title {
+      margin-left: 210px;
+      margin-right: 210px;
+    }
+
+    
+    h1 {
+      margin: auto;
+    }
+    
+}
