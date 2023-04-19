@@ -1,6 +1,6 @@
 
 body {
-  max-width: 750px;
+  
   margin: 0;
   font-family:'Roboto' ;
 }
@@ -42,6 +42,12 @@ h2 {
   justify-content: center;
   height: 64px;
   
+  
+}
+
+.container + h3 + .plats {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -54,9 +60,17 @@ h2 {
 .effet {
   background-color: #99E2D0;
   display: none;
-  transition: 100s;
-  height:400%
+  width: 15%;
+  margin-top: -20px;
   
+  
+  
+  
+  
+}
+
+.h3 {
+  padding-right: 100px;
 }
 
 
@@ -66,20 +80,28 @@ h2 {
   background-color:white;
   border-radius: 15px;
   display: flex;
-  align-items: top;
+  justify-content: center;
   
-  transition: 0.9s;
+
   
 }
 
-.prize:active + .effet {
+.prize {
+  transition: 4s;
+  height: 100%;
+  margin-top: -20px;
+}
+
+.prize:hover + .effet {
   display: flex;
   background-color: #99E2D0;
-  height: 300%;
   align-items: center;
+  justify-content: center;
   
   
 }
+
+
 
 i {
   cursor: pointer;
@@ -98,18 +120,19 @@ i {
   opacity: 1;
 }
 
-
-
-.prize:hover + .fa-v {
-  display: block;
-  color: red;
+.fa-empty {
+  font-size: 22px;
 }
-  
-.prize::before  {
-  display: block;
-  background-color: #99E2D0;
+
+.fa-empty:active {
+  opacity: 0;
 }
-  
+
+.heart-icons {
+  display: flex;
+  align-items: center;
+}
+
 
 
 .menu {
@@ -126,17 +149,106 @@ i {
 
 .card {
     background-color: white;
-   
+    
     border-radius: 15px;
-    padding: 12px 10px 0 10px;
-    min-width: 349px;
+    padding: 12px 10px 12px 10px;
     justify-content: center;
-    height:68px;
     margin-bottom: 20px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    animation:card 1s cubic-bezier(0.6, 0.01, 1, 0.47);
+}
+
+.delay2 {
+  animation:card 1.5s cubic-bezier(0.6, 0.01, 1, 0.47);
+}
+
+.delay3 {
+  animation:card 2.5s cubic-bezier(0.6, 0.01, 1, 0.47);
+}
+
+.cardtest {
+  background-color: white;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation:card 1.2s cubic-bezier(0.6, 0.01, 1, 0.47);
     
 }
+
+.titleplat {
+  justify-content: flex-start;
+  padding: 12px 10px;
+  
+}
+
+.containertest {
+  display: flex;
+    padding: 0;
+    align-items: end;
+    justify-content: space-between;
+    
+
+
+}
+
+.prizetest {
+  padding-right: 25px;
+  padding-bottom: 12px;
+  
+  
+}
+
+.cardtest h3 {
+  margin: 0;
+}
+
+.effetest {
+  background-color: #99E2D0;
+  display: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 17px;
+  
+  
+ 
+  
+
+  
+
+}
+
+
+.prizetest:hover + .effetest {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  
+ 
+  
+  
+}
+
+.fa-test {
+  
+  background-color:white;
+  color:#99E2D0;
+  padding: 8px;
+  
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  transition-delay: 0.5s;
+
+}
+
+
+
 
 .card h3 {
   margin: 0;
@@ -147,9 +259,26 @@ i {
   margin: 0;
 }
 
+
+@keyframes card {
+  0% {
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  100% {
+      opacity: 1;
+      
+  }
+}
+
+
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  
+  
+  
 }
 
 main {
@@ -258,30 +387,39 @@ footer i {
 
 
 
- 
   
+ 
 
 
 
   @media screen and (min-width: 1440px) {
 
     
+    
+    
 
-    body {
-        max-width: 1440px;
+    .reverse {
+        display: flex;
+        flex-direction: row;
+        justify-content:end;
+        padding-right: 20px;
+        
     }
 
     footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         padding-top: 64px;
         justify-content:end;
         padding-right: 20px;
+        
     }
 
     footer img {
-      padding-left: 30px;
-      padding-top: 0;
+    
+      padding:0 60px 0 60px ;
+      
+      
       
     }
 
