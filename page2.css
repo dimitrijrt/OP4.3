@@ -183,7 +183,10 @@ i {
 .titleplat {
   justify-content: flex-start;
   padding: 12px 10px;
-  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 
 .containertest {
