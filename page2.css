@@ -226,7 +226,7 @@ i {
 }
 
 
-.prizetest:hover + .effetest {
+.cardtest:hover  .effetest {
   display: flex;
   
   align-items: center;
