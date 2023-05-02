@@ -308,7 +308,7 @@ footer i {
     justify-content: center;
     align-items: center;
     z-index:1;
-    animation:loader 1.5s cubic-bezier(0.6, 0.01, 1, 0.47);
+    animation:loader 1.5s cubic-bezier(0.6, 0.01, 0.8, 0.47);
     animation-fill-mode: both;
    
 }
